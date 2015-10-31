@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	InAPPception by fsociety
+	The App, that finds apps!
+-->
+<html>
+	<head>
+		<title>InAPPception by fsociety</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+<script type="text/javascript">
+
+				function onAdd() {
+    //$("#display").load(filePath);
+    $.ajax({
+        type: "GET",
+        url: 'php/funcs.php',
+        data: "functionName=xyz",
+        success: function(response) {
+            alert(response);
+        }
+    });
+}
+
+function onSave() {
+    //$("#display").load(filePath);
+    $.ajax({
+        type: "GET",
+        url: 'php/funcs.php',
+        data: "functionName=abcd",
+        success: function(response) {
+            document.getElementById("abhi").innerHTML = response;
+        }
+    });
+}
+
+			</script>
+
+
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">InAPPception</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="search.html">Search</a></li>
+								<li><a href="add.html">Add</a></li>
+								<li><a href="index.html#contact">Contact Us</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="#">Log In</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							
+							<div class="logo"><span class="icon fa-eye"></span></div>
+							<h2>Welcome to InAPPception</h2>
+							<p>THE app, to finds apps.</a></p>
+						</div>
+					</section>
+
+				<!-- Wrapper --><nav id="a1"></nav>
+					<section id="wrapper">
+
+						<!-- One -->
+			
+						
+
+
+							
+					</section>
+					<nav id="contact"></nav>
+					<br><br>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+
+							<button id="special" onClick="onSave()">Click Me!</button>
+							<button id="special" onClick="onAdd()">Click Me to get error!</button>
+							<div id="abhi">t</div>
+							<ul class="copyright">
+								<li>&copy; InAppcetion. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
