@@ -18,4 +18,6 @@
     </author>
 
 <access uri="http://google.com" subdomains="false" />
+
+<access uri="localhost subdomains="false" />
 </widget>
