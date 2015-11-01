@@ -20,4 +20,5 @@
 <access uri="http://google.com" subdomains="false" />
 
 <access uri="localhost" subdomains="false" />
+<access origin="*" launch-external="yes" />
 </widget>
